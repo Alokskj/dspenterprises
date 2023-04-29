@@ -1,6 +1,6 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import ServicesWidget from "@/components/ServicesWidget";
+import Header from "@/components/header";
+import Hero from "@/components/hero";
+import ServicesWidget from "@/components/servicesWidget";
 
 
 export default function Home() {
