@@ -4,6 +4,7 @@ import {Montserrat } from 'next/font/google'
 import "@fortawesome/fontawesome-svg-core/styles.css"; 
 
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Header from '@/components/Header';
 config.autoAddCss = false; 
 
 const monserrat = Montserrat({
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body>{children}</body>
+      <body>{<Header />}{children}</body>
     </html>
   )
 }

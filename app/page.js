@@ -1,13 +1,12 @@
-import Header from "@/components/header";
-import Hero from "@/components/hero";
-import ServicesWidget from "@/components/servicesWidget";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import ServicesWidget from "@/components/ServicesWidget";
 
 
 export default function Home() {
   return (
     <>
     
-    <Header/>
     <section className="hero">
     <Hero />
     </section>

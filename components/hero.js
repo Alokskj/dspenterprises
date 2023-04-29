@@ -1,9 +1,13 @@
+'use client'
+import {ReactComponent as MarketingSvg} from "@/public/assets/svgs/Marketing-consulting-cuate.svg"
+import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 const Hero = () => {
+
   return (
-    <main className=" hero relative font-poppin min-h-screen">
-      <div className="hero-overlay absolute h-full  w-full"></div>
-      <div className="hero-content relative z-40 flex flex-col text-center md:text-left py-36 px-4 md:px-30 lg:px-40 xl:px-60 text-white ">
+    <main className=" hero flex min-w-screen font-poppin min-h-screen">
+      <div className="hero-content  flex flex-col text-center md:text-left py-16 md:py-24 px-4 md:px-30 lg:px-40 xl:px-60  ">
         <div className="hero-welcome-title md:text-xl uppercase">
           <p>welcome to DSP enterprises</p>
         </div>
@@ -17,19 +21,22 @@ const Hero = () => {
             deliver results.
           </p>
         </div>
-        <div className="hero-actions-buttons flex flex-col  items-center md:items-start md:flex-row font-semibold space-y-10 md:space-y-0 md:space-x-10 mt-10">
+        <div className="hero-actions-buttons flex flex-col  items-center md:items-start md:flex-row font-semibold space-y-10 md:space-y-0 md:space-x-5 mt-10">
           <div className="get-quote">
             <a
               href="#"
-              className="bg-[#3535de] py-3 px-5  transition-colors duration-500 hover:bg-slate-50 hover:text-black rounded-md"
+              className="bg-[#3535de] py-3 px-5 text-white shadow-sm shadow-theme transition-colors duration-500 hover:shadow-black hover:bg-black hover:text-white rounded-md"
             >
               Get a Free Quote
             </a>
           </div>
           <div className="learn-more">
-            <a href="#services-widget" className="text-white hover:text-gray-300 transition-colors duration-300">Learn more</a>
+            <a href="#services-widget" className="border-2 border-theme py-3 hover:bg-black hover:border-black hover:text-white px-4 text-theme rounded-xl transition-colors duration-300">Learn more</a>
           </div>
         </div>
+      </div>
+      <div className="hero-lottie absolute hidden xl:block top-28 right-24">
+       <Image src='/assets/svgs/Marketing-consulting-cuate.svg' width={600} height={600} />
       </div>
     </main>
   );

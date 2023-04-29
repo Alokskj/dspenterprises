@@ -21,7 +21,7 @@ const ServicesWidget = () => {
             </div>
         </div>
         <div className="keyfeatures grid grid-cols-1 md:grid-cols-3 mt-8 md:mt-20 gap-8">
-            <div className="feature transition-all duration-500 hover:bg-stone-50 hover:shadow-xl p-4 rounded-xl">
+            <div className="feature transition-all duration-500  hover:bg-stone-50  hover:shadow-xl p-4 rounded-xl">
                 <div className="svg">
                 <FontAwesomeIcon icon={faCommentDots} color='var(--primary-color)' size='2xl'/>
                 </div>

@@ -11,7 +11,7 @@
 html{
   scroll-behavior: smooth;
 }
-.hero{
+/* .hero{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,4 +26,4 @@ html{
   opacity: 1;
   z-index: 1;
   transition: all .3s;
-}
+} */
