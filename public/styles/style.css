@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+  --primary-color : #3535de;
+}
+.poppins{
+  font-family: 'Poppins', sans-serif;;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.hero{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/assets/images/digital-marketing-agency-hero-img-bg.jpg');
+}
+.hero-overlay{
+  background-color: #121240cf;
+  background-image: url('/assets/svgs/hero-overlay.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 50vw auto;
+  opacity: 1;
+  z-index: 1;
+  transition: all .3s;
+}
