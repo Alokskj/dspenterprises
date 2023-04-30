@@ -9,24 +9,13 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const ServicesWidget = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-  const mainControls = useAnimation();
-  const animationTranstiton = {}
+  const animationTranstiton = {duration : 0.2, type: 'tween'}
   const animationVariants = {
     hidden: { opacity : 0 ,y : 100 },
     visible: { opacity : 1 ,y : 0 },
   };
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start(animationVariants.visible);
-    }
-    if(!isInView){
-        mainControls.start(animationVariants.hidden)
-    }
-  }, [isInView]);
   return (
-    <div className=" min-h-screen p-4 md:mt-20 w-full flex items-start flex-col md:flex-row">
+    <div className=" h-full p-4 md:mt-20 w-full flex items-start flex-col md:flex-row">
       <div className="section-title flex md:justify-center text-[#3535de] md:w-2/3 poppins uppercase font-semibold ">
         <p>what we do</p>
       </div>
@@ -38,16 +27,18 @@ const ServicesWidget = () => {
           <div className="services-paragraph text-gray-500 md:my-8 md:w-4/5">
             <p>
               We offer a wide range of marketing services to help businesses
-              succeed in today's competitive environment. Our team of experts
-              specializes in creating custom marketing
+              succeed in today's competitive environment.
+              <span className="hidden md:inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis atque deserunt voluptates quod incidunt exercitationem ratione ut totam consectetur.</span>
             </p>
           </div>
         </div>
-        <div ref={ref} className="keyfeatures grid grid-cols-1 md:grid-cols-3 mt-8 md:mt-20 gap-8">
+        <div  className="keyfeatures grid grid-cols-1 md:grid-cols-3 mt-4 md:mt-20 gap-4 md:gap-10">
           <motion.div
-            
+            variants={animationVariants}
+            initial='hidden'
+            whileInView='visible'
             transition={animationTranstiton}
-            animate={mainControls}
+            
             className="feature transition-all duration-500  hover:bg-stone-50  hover:shadow-xl p-4 rounded-xl"
           >
             <div className="svg">
@@ -65,9 +56,10 @@ const ServicesWidget = () => {
             </div>
           </motion.div>
           <motion.div
-            
-             transition={animationTranstiton}
-             animate={mainControls}
+            variants={animationVariants}
+            initial='hidden'
+            whileInView='visible'
+            transition={animationTranstiton}
             className="feature transition-all duration-500 hover:bg-stone-50 hover:shadow-xl p-4 rounded-xl"
           >
             <div className="svg">
@@ -88,8 +80,10 @@ const ServicesWidget = () => {
             </div>
           </motion.div>
           <motion.div
+             variants={animationVariants}
+             initial='hidden'
+             whileInView='visible'
              transition={animationTranstiton}
-             animate={mainControls}
             className="feature transition-all duration-500 hover:bg-stone-50 hover:shadow-xl p-4 rounded-xl"
           >
             <div className="svg">
