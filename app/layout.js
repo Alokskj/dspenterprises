@@ -4,7 +4,7 @@ import {Montserrat } from 'next/font/google'
 import "@fortawesome/fontawesome-svg-core/styles.css"; 
 
 import { config } from "@fortawesome/fontawesome-svg-core";
-import Header from '@/components/Header';
+import Header from '@/components/header';
 config.autoAddCss = false; 
 
 const monserrat = Montserrat({
