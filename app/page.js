@@ -1,8 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import OurServices from "@/components/OurServices";
 import ServicesWidget from "@/components/ServicesWidget";
-import StatSection from "@/components/StatSection";
 
 
 export default function Home() {
