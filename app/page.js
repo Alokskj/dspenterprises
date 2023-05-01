@@ -1,4 +1,5 @@
-import Header from "@/components/Header";
+import OurServices from "@/components/OurServices";
+import StatSection from "@/components/StatSection";
 import Hero from "@/components/Hero";
 import ServicesWidget from "@/components/ServicesWidget";
 
