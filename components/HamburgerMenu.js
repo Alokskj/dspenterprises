@@ -33,7 +33,7 @@ const HamburgerMenu = () => {
                 <motion.li variants={item}><a href="/">Home</a></motion.li>
                 <motion.li variants={item}><a href="#our-services">Services</a></motion.li>
                 <motion.li variants={item}><a href="/">About</a></motion.li>
-                <motion.li variants={item}><a href="/">Blog</a></motion.li>
+                <motion.li variants={item}><a href="/gallery">Gallery</a></motion.li>
                 <motion.li variants={item}><a href="/">Contact</a></motion.li>
             </ul>
     </nav>

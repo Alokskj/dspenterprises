@@ -10,13 +10,14 @@ const OurServices = () => {
   }
 
   return (
-    <div className='min-h-screen bg-[#f4f4f5] pt-8 flex flex-col items-center  px-4 md:px-30 lg:px-40 xl:px-60'>
+    <div className='services service relative min-h-screen  pt-8 flex flex-col items-center  px-4 md:px-30 lg:px-40 xl:px-60'>
+    
      <div className="section-title  text-center text-lg poppins font-semibold text-theme uppercase mb-5">
         <h3>our services</h3>
      </div>
      <div className="section-title-paragraph text-center items-center space-y-3">
-        <h1 className='text-2xl md:text-4xl  font-bold '>Take Your Business to the next Level</h1>
-        <p className='text-gray-500 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero reiciendis fugit quo, debitis dolorem autem facilis qui magni ratione!</p>
+        <h1 className='text-3xl md:text-5xl  font-bold '>Take Your Business to the next Level</h1>
+        <p className='text-gray-500 text-xs md:test-sm md:w-2/3 m-auto'>Lorem ipsum dolorvero reiciendis fugit quo, debitis dolorem autem facilis qui magni ratione!</p>
      </div>
      <div className="features grid grid-cols-1 md:grid-cols-2 my-8  gap-4 ">
          <motion.div

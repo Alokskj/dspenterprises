@@ -17,6 +17,7 @@
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "framer-motion": "^10.12.4",
+    "lightgallery": "^2.7.1",
     "lottie-react": "^2.4.0",
     "next": "13.3.1",
     "postcss": "8.4.23",

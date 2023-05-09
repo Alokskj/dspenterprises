@@ -27,3 +27,14 @@ html{
   z-index: 1;
   transition: all .3s;
 } */
+
+.services{
+  background-color: #f4f4f5;
+  background-image: url('/assets/svgs/digital-marketing-agency-arc-stroke-white-grad-2.svg'), url('/assets/svgs/digital-marketing-agency-arc-stroke-white-grad-1.svg');
+  background-position: bottom left, top right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50vw auto;
+  
+}
+
+
