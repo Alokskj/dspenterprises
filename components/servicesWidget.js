@@ -22,7 +22,7 @@ const ServicesWidget = () => {
       <div className="section-content">
         <div className="services-title-paragraph">
           <div className="services-main-title font-bold text-3xl md:text-6xl md:w-3/5 mt-4 mb-4 md:mt-0 capitalize">
-            <p>full-service internet marketing solutions</p>
+            <p>full-service Brand marketing solutions</p>
           </div>
           <div className="services-paragraph text-gray-500 md:my-8 md:w-4/5">
             <p>
@@ -49,10 +49,10 @@ const ServicesWidget = () => {
               />
             </div>
             <div className="title text-2xl font-bold my-2">
-              <p>Consulting</p>
+              <p>Brand Management</p>
             </div>
             <div className="paragraph text-gray-500">
-              <p>Pretium accumsan in ipsum convallis pellentesque metus</p>
+              <p>We craft compelling brand strategies, enhance brand identity, and drive long-term success for your business.</p>
             </div>
           </motion.div>
           <motion.div
@@ -70,12 +70,11 @@ const ServicesWidget = () => {
               />
             </div>
             <div className="title text-2xl font-bold my-2">
-              <p>Marketing</p>
+              <p>Broadcast Management</p>
             </div>
             <div className="paragraph text-gray-500">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Accusantium, at?
+              From planning to execution, we ensure flawless delivery of your brand's message.
               </p>
             </div>
           </motion.div>
@@ -94,10 +93,10 @@ const ServicesWidget = () => {
               />
             </div>
             <div className="title text-2xl font-bold my-2">
-              <p>Design</p>
+              <p>Marketing</p>
             </div>
             <div className="paragraph text-gray-500">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <p>Our expert team creates impactful marketing strategies to drive growth and maximize brand visibility.</p>
             </div>
           </motion.div>
         </div>

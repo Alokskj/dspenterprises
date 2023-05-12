@@ -4,12 +4,14 @@ import Hero from "@/components/Hero";
 import ServicesWidget from "@/components/ServicesWidget";
 import TrustedBy from "@/components/TrustedBy";
 import ContactUs from "@/components/ContactUs";
+import Testimonial from "@/components/Testimonial";
+import InfoTop from "@/components/InfoTop";
 
 
 export default function Home() {
   return (
     <>
-    
+  
     <section className="hero">
     <Hero />
     </section>
@@ -24,6 +26,9 @@ export default function Home() {
     </section>
     <section className="trusted-by" id="trusted-by">
       <TrustedBy/>
+    </section>
+    <section id="testimonial" className="testimonail">
+      <Testimonial />
     </section>
     <section className="contact-us" id="contact-us">
       <ContactUs/>

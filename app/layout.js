@@ -6,6 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import InfoTop from '@/components/InfoTop';
 config.autoAddCss = false; 
 
 const monserrat = Montserrat({
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body>{<Header />}{children}{<Footer/>}</body>
+      <body>{<InfoTop />} {<Header />}{children}{<Footer/>}</body>
     </html>
   )
 }

@@ -12,12 +12,12 @@ const page = () => {
       {imageCount.map((count) => {
         return (
           <div className="image w-full h-full max-h-80">
-            <Image
+            <img
               className="h-full w-full object-cover object-center rounded-lg shadow-md transform duration-300 transition-all hover:scale-110 hover:shadow-lg"
               src={`/assets/images/gallery/${count}.jpeg`}
-              height={100}
-              width={100}
-              quality={100}
+              // height={100}
+              // width={100}
+              // quality={100}
             />
           </div>
         );

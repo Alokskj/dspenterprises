@@ -36,5 +36,12 @@ html{
   background-size: 50vw auto;
   
 }
-
+.theme-line::after{
+  content: "";
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  height: 6px;
+  width: 40px;
+  
+}
 

@@ -11,12 +11,12 @@ const Hero = () => {
         <div className="hero-welcome-title md:text-xl uppercase">
           <p>welcome to DSP enterprises</p>
         </div>
-        <div className="hero-tagline text-4xl md:text-6xl leading-[1.2] font-bold md:w-4/5 xl:w-3/5 mt-10 capitalize">
-          <p>Amplify your brand's voice with our strategic marketing.</p>
+        <div className="hero-tagline  text-[2.8rem] md:text-6xl leading-[1.1] font-bold md:w-4/5 xl:w-3/5 mt-10 capitalize">
+          <p>We transform big ideas into remarkable realities.</p>
         </div>
         <div className="hero-paragraph md:w-1/2 mt-8  md:text-md font-semibold">
           <p>
-            Welcome to our dsp enterprises! We create powerful campaigns that
+            Welcome to dsp enterprises! We create powerful campaigns that
             connect your brand with your audience. From print to events, we
             deliver results.
           </p>
