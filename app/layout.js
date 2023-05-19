@@ -23,6 +23,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body>{<InfoTop />} {<Header />}{children}{<Footer/>}</body>
+      <script src="https://smtpjs.com/v3/smtp.js">
+</script>
     </html>
   )
 }

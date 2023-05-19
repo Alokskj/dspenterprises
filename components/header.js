@@ -28,7 +28,7 @@ const Header = () => {
         </nav>
        </div>
        <div className="contact hidden md:flex pr-4  font-semibold cursor-pointer">
-       <a href="/" className='bg-[#3535de] text-white py-3 px-5 transition-colors duration-500 hover:bg-black hover:text-white rounded-md'>Get a Free Quote</a>
+       <Link href={"/contact"} className='bg-[#3535de] text-white py-3 px-5 transition-colors duration-500 hover:bg-black hover:text-white rounded-md'>Get a Free Quote</Link>
 
        </div>
        <HamburgerMenu />

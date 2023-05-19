@@ -48,7 +48,7 @@ const HamburgerMenu = () => {
                 <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"#our-services"}>Services</Link></motion.li>
                 <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/aboutus"}>About</Link></motion.li>
                 <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/gallery"}>Gallery</Link></motion.li>
-                <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/"}>Contact</Link></motion.li>
+                <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/contact"}>Contact</Link></motion.li>
             </ul>
     </nav>
     </motion.div>

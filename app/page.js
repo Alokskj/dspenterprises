@@ -6,32 +6,37 @@ import TrustedBy from "@/components/TrustedBy";
 import ContactUs from "@/components/ContactUs";
 import Testimonial from "@/components/Testimonial";
 import InfoTop from "@/components/InfoTop";
+import { getHomeInfo } from "@/sanity/sanity-utils";
 
 
-export default function Home() {
+export default async function Home() {
+  const info = await getHomeInfo()
+ 
+  const data = info[0]
+ 
   return (
     <>
   
     <section className="hero">
-    <Hero />
+    <Hero data={data}/>
     </section>
     <section id="services-widget" className='services-widget'>
-    <ServicesWidget />
+    <ServicesWidget data={data}/>
     </section>
     <section id="stats" className="stats" >
-     <StatSection />
+     <StatSection data={data}/>
     </section>
     <section id="our-services" className="our-services">
-     <OurServices />
+     <OurServices data={data}/>
     </section>
     <section className="trusted-by" id="trusted-by">
-      <TrustedBy/>
+      <TrustedBy data={data}/>
     </section>
     <section id="testimonial" className="testimonail">
-      <Testimonial />
+      <Testimonial data={data}/>
     </section>
     <section className="contact-us" id="contact-us">
-      <ContactUs/>
+      <ContactUs data={data}/>
     </section>
     </>
   )
