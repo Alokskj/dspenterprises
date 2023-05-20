@@ -11,7 +11,6 @@ import { getHomeInfo } from "@/sanity/sanity-utils";
 
 export default async function Home() {
   const info = await getHomeInfo()
- 
   const data = info[0]
  
   return (

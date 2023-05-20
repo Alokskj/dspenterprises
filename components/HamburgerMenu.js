@@ -45,7 +45,7 @@ const HamburgerMenu = () => {
     <nav >
             <ul  className='flex flex-col mb-2 text-xl  space-y-3 font-semibold '>
                 <motion.li variants={item} transition={{duration: 0.5}}><Link href={'/'}>Home</Link></motion.li>
-                <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"#our-services"}>Services</Link></motion.li>
+                <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/services"}>Services</Link></motion.li>
                 <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/aboutus"}>About</Link></motion.li>
                 <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/gallery"}>Gallery</Link></motion.li>
                 <motion.li variants={item} transition={{duration: 0.5}} ><Link href={"/contact"}>Contact</Link></motion.li>

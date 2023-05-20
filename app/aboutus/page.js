@@ -1,6 +1,9 @@
 import React from "react";
-
+export const metadata = {
+  title: 'About Us',
+}
 const AboutUs = () => {
+  
   return (
     <div className="min-h-screen flex flex-col mb-8 px-4 md:px-30 lg:px-40 xl:px-60">
       <div className="font-bold text-2xl my-8">
@@ -11,7 +14,7 @@ const AboutUs = () => {
         <p className="about-us-paragraph">
           Welcome to DSP Enterprises, a leading provider of comprehensive
           marketing solutions. With years of experience and a team of dedicated
-          professionals, we are committed to delivering exceptional results for
+          professionals, we are committed to delivering exceptional results htmlFor
           businesses across various industries. Our mission is to ignite brand
           success by providing strategic and innovative marketing services. 
         </p>

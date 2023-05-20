@@ -1,7 +1,10 @@
+import { getHomeInfo } from '@/sanity/sanity-utils'
 import Link from 'next/link'
 import React from 'react'
 
-const Footer = () => {
+const Footer = async () => {
+  const info = await getHomeInfo()
+  const data = info[0]
   return (
     <footer className="text-gray-600 body-font bg-gray-50">
   <div className="container px-5 py-10 md:py-28 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -17,16 +20,16 @@ const Footer = () => {
         <h2 className="title-font font-medium text-theme tracking-widest text-md mb-3">Services</h2>
         <nav className="list-none mb-10">
           <li>
-            <Link href="#"  className="text-gray-600 hover:text-gray-800">Vinyl+one way printing</Link>
+            <Link href={'/services'}  className="text-gray-600 hover:text-gray-800">Vinyl+one way printing</Link>
           </li>
           <li>
-            <Link href="#"  className="text-gray-600 hover:text-gray-800">Led signboard</Link>
+            <Link href={'/services'}  className="text-gray-600 hover:text-gray-800">Led signboard</Link>
           </li>
           <li>
-            <Link href="#"  className="text-gray-600 hover:text-gray-800">in shop branding</Link>
+            <Link href={'/services'}  className="text-gray-600 hover:text-gray-800">in shop branding</Link>
           </li>
           <li>
-            <Link href="#"  className="text-gray-600 hover:text-gray-800">corporate gifting</Link>
+            <Link href={'/services'}  className="text-gray-600 hover:text-gray-800">corporate gifting</Link>
           </li>
         </nav>
       </div>
@@ -34,10 +37,10 @@ const Footer = () => {
         <h2 className="title-font font-medium text-theme  tracking-widest text-md mb-3">Queries</h2>
         <nav className="list-none mb-10">
           <li>
-            <Link href="#"  className="text-gray-600 hover:text-gray-800">About us</Link>
+            <Link href={'/about'}  className="text-gray-600 hover:text-gray-800">About us</Link>
           </li>
           <li>
-            <Link href="#"  className="text-gray-600 hover:text-gray-800">Contact us</Link>
+            <Link href={'/contact'}  className="text-gray-600 hover:text-gray-800">Contact us</Link>
           </li>
           <li>
             <Link href="#"  className="text-gray-600 hover:text-gray-800">privacy policies</Link>
@@ -49,7 +52,7 @@ const Footer = () => {
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4 mb-8">
         <h2 className="title-font font-medium text-theme tracking-widest text-md mb-3">Contact Info</h2>
-        <p className='w-1/2 m-auto md:m-0'>Plot no 20/6/19 First floor Site iv industrial area, sahibabad, ghaziabad</p>
+        <p className='w-1/2 m-auto md:m-0'>{data.address}</p>
       </div>
     </div>
   </div>

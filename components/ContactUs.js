@@ -81,24 +81,24 @@ const ContactUs = () => {
       <div className="form">
       <form  onSubmit={submitHander} className="p-6 flex flex-col justify-center">
                         <div className="flex flex-col">
-                            <label for="name" className="hidden">Full Name</label>
+                            <label htmlFor="name" className="hidden">Full Name</label>
                             <input required value={formState.name} onChange={changeHalder} type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <div className="flex flex-col mt-2">
-                            <label for="email" className="hidden">Email</label>
+                            <label htmlFor="email" className="hidden">Email</label>
                             <input required value={formState.email} onChange={changeHalder} type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <div className="flex flex-col mt-2">
-                            <label for="message" className="hidden">Message</label>
+                            <label htmlFor="message" className="hidden">Message</label>
                             <textarea required value={formState.message} onChange={changeHalder}  rows={3} name="message" id="message" placeholder="Enter your message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
                         </div>
 
                         {isSubmit ?
                         
                         <button  type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
-                            Thanks for contacting us
+                            Thanks htmlFor contacting us
                         </button>
                         :
                         
@@ -156,25 +156,25 @@ const ContactUs = () => {
 
                     <form onSubmit={submitHander} className="p-6 flex flex-col justify-center">
                         <div className="flex flex-col">
-                            <label for="name" className="hidden">Full Name</label>
+                            <label htmlFor="name" className="hidden">Full Name</label>
                             <input type="name" required value={formState.name} onChange={changeHalder} name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <div className="flex flex-col mt-2">
-                            <label for="email" className="hidden">Email</label>
+                            <label htmlFor="email" className="hidden">Email</label>
                             <input type="email" required value={formState.email} onChange={changeHalder} name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <div className="flex flex-col mt-2">
                             
-                            <label for="message" className="hidden">Message</label>
+                            <label htmlFor="message" className="hidden">Message</label>
                             <textarea  type="text" required value={formState.message} onChange={changeHalder} name="message" id="message" placeholder="Enter your Message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
                         </div>
 
                         {isSubmit ?
                         
                         <button  type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
-                            Thanks for contacting us
+                            Thanks htmlFor contacting us
                         </button>
                         :
                         

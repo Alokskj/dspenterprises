@@ -20,9 +20,8 @@ const Header = () => {
         <nav className='hidden md:flex'>
             <ul className='flex space-x-5 font-semibold capitalize'>
                 <li><Link href={"/"}>Home</Link></li>
-                <li><Link href={"#our-services"}>Services</Link></li>
+                <li><Link href={"/services"}>Services</Link></li>
                 <li><Link href={"/gallery"}>gallery</Link></li>
-                <li><Link href={"/"}>Blog</Link></li>
                 <li><Link href={"/aboutus"}>about</Link></li>
             </ul>
         </nav>
