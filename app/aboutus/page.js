@@ -5,12 +5,16 @@ export const metadata = {
 const AboutUs = () => {
   
   return (
-    <div className="min-h-screen flex flex-col mb-8 px-4 md:px-30 lg:px-40 xl:px-60">
+    <div
+    data-aos='fade'
+    className="min-h-screen flex flex-col mb-8 px-4 md:px-30 lg:px-40 xl:px-60">
       <div className="font-bold text-2xl my-8">
         <h4 className="theme-line flex flex-col">Who we are</h4>
       </div>
       <div className="paragraphs md:w-2/3 flex flex-col gap-10">
-      <div className="paragraph ">
+      <div
+      data-aos='fade'
+       className="paragraph ">
         <p className="about-us-paragraph">
           Welcome to DSP Enterprises, a leading provider of comprehensive
           marketing solutions. With years of experience and a team of dedicated
@@ -19,7 +23,9 @@ const AboutUs = () => {
           success by providing strategic and innovative marketing services. 
         </p>
       </div>
-      <div className="paragraph">
+      <div
+      data-aos='fade'
+      className="paragraph">
         <p>
         At
           DSP Enterprises, we understand the importance of a strong brand
@@ -31,7 +37,9 @@ const AboutUs = () => {
           resonates with your target audience. 
         </p>
       </div>
-      <div className="paragraph">
+      <div
+      data-aos='fade'
+      className="paragraph">
         <p>
         Our expertise extends beyond
           brand management. We offer a wide range of services to meet your
@@ -42,7 +50,9 @@ const AboutUs = () => {
           experiences that leave a lasting impression.
         </p>
       </div>
-      <div className="paragraph">
+      <div
+      data-aos='fade'
+      className="paragraph">
         <p>
         As pioneers in the
           industry, we pride ourselves on staying ahead of the curve. We embrace
@@ -53,7 +63,9 @@ const AboutUs = () => {
           landscape.
         </p>
       </div>
-      <div className="paragraph">
+      <div
+      data-aos='fade'
+       className="paragraph">
         <p>
         At DSP Enterprises, we value collaboration and
           transparency. We take the time to understand your unique business
@@ -63,7 +75,9 @@ const AboutUs = () => {
           exceed expectations.
         </p>
       </div>
-      <div className="paragraph">
+      <div
+      data-aos='fade'
+      className="paragraph">
         <p>
         Partner with DSP Enterprises to unleash the true
           potential of your brand. Whether you're a small startup or an

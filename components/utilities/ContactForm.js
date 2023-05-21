@@ -71,6 +71,8 @@ const ContactForm = () => {
               
             <div className="grid grid-cols-1  gap-5 md:grid-cols-2 mt-12">
             <input
+                data-aos='fade'
+                data-aos-delay="100"      
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 name="name"
@@ -80,6 +82,9 @@ const ContactForm = () => {
                 placeholder="First Name*"
               />
               <input
+                data-aos='fade'
+                data-aos-delay="200"      
+
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
                 name="lastName"
@@ -90,6 +95,9 @@ const ContactForm = () => {
                 
               />
               <input
+                data-aos='fade'
+                data-aos-delay="300"      
+
                 className="w-full md:col-span-2 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="email"
                 name="email"
@@ -103,6 +111,9 @@ const ContactForm = () => {
             </div>
             <div className="my-4">
               <textarea
+                data-aos='fade'
+                data-aos-delay="400"      
+
                 placeholder="Message*"
                 name="message"
                 onChange={changeHalder}
@@ -111,10 +122,16 @@ const ContactForm = () => {
                 className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               ></textarea>
             </div>
-            <div className="my-2 w-1/2 lg:w-1/4">
+            <div
+            data-aos='fade'
+            className="my-2 w-1/2 lg:w-1/4">
             {isSubmit ?
                         
-                        <button type="submit"
+                        <button
+                        data-aos="fade-left"
+                        data-aos-delay="100"      
+
+                        type="submit"
                         disabled
                 className="uppercase text-sm font-bold tracking-wide bg-gray-200 text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"
@@ -123,7 +140,7 @@ const ContactForm = () => {
               </button>
                         :
                         
-                        <button type="submit"
+                        <button data-aos="fade-left" type="submit"
                         className="uppercase text-sm font-bold tracking-wide bg-theme text-gray-100 p-3 rounded-lg w-full 
                               focus:outline-none focus:shadow-outline"
                       >

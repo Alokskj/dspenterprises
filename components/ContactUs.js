@@ -69,7 +69,9 @@ const ContactUs = () => {
 
   return (
     <>
-    <div className="services py-4 md:hidden bg-gray-100 dark:bg-gray-900  px-4 md:px-30 lg:px-40 xl:px-60">
+    <div
+    data-aos='fade'
+    className="services py-4 md:hidden bg-gray-100 dark:bg-gray-900  px-4 md:px-30 lg:px-40 xl:px-60">
       <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
         <h4>Get in touch</h4>
       </div>
@@ -80,32 +82,53 @@ const ContactUs = () => {
       </div>
       <div className="form">
       <form  onSubmit={submitHander} className="p-6 flex flex-col justify-center">
-                        <div className="flex flex-col">
+                        <div
+                        data-aos="fade"
+                        data-aos-delay="100"
+                        data-aos-duration="600"
+                        className="flex flex-col">
                             <label htmlFor="name" className="hidden">Full Name</label>
                             <input required value={formState.name} onChange={changeHalder} type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
-                        <div className="flex flex-col mt-2">
+                        <div
+                        data-aos="fade"
+                        data-aos-delay="125"
+                        data-aos-duration="600"
+                        className="flex flex-col mt-2">
                             <label htmlFor="email" className="hidden">Email</label>
                             <input required value={formState.email} onChange={changeHalder} type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
-                        <div className="flex flex-col mt-2">
+                        <div
+                        data-aos="fade"
+                        data-aos-delay="150"
+                        data-aos-duration="600"
+                        className="flex flex-col mt-2">
                             <label htmlFor="message" className="hidden">Message</label>
                             <textarea required value={formState.message} onChange={changeHalder}  rows={3} name="message" id="message" placeholder="Enter your message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
                         </div>
-
+                        
                         {isSubmit ?
                         
-                        <button  type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
+                        <button
+                        data-aos="fade-up"
+                        data-aos-delay="175"
+                        data-aos-duration="600"
+                        type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
                             Thanks htmlFor contacting us
                         </button>
                         :
                         
-                        <button  type="submit" className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                        <button
+                        data-aos="fade-up"
+                        data-aos-delay="175"
+                        data-aos-duration="600"
+                        type="submit" className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
                            Submit
                         </button>
                         }
+                        
      </form>
       </div>
     </div>

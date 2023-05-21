@@ -5,8 +5,12 @@ import { urlFor } from '@/sanity/sanity-utils'
 
 const Testimonial = ({data}) => {
   return (
-    <section className="text-gray-600 bg-gray-50 body-font px-4 md:px-30 lg:px-40 xl:px-60">
-  <div className="container px-5 pb-24 pt-4  mx-auto">
+    <section
+    
+    className="text-gray-600 bg-gray-50 body-font px-4 md:px-30 lg:px-40 xl:px-60">
+  <div
+  data-aos='fade'
+  className="container px-5 pb-24 pt-4  mx-auto">
   <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
         <h4>Testimonial</h4>
       </div>

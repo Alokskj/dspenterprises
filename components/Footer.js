@@ -37,7 +37,7 @@ const Footer = async () => {
         <h2 className="title-font font-medium text-theme  tracking-widest text-md mb-3">Queries</h2>
         <nav className="list-none mb-10">
           <li>
-            <Link href={'/about'}  className="text-gray-600 hover:text-gray-800">About us</Link>
+            <Link href={'/aboutus'}  className="text-gray-600 hover:text-gray-800">About us</Link>
           </li>
           <li>
             <Link href={'/contact'}  className="text-gray-600 hover:text-gray-800">Contact us</Link>
