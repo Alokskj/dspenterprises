@@ -24,7 +24,31 @@ export async function getHomeInfo(){
       section1FeatureItem3{
         ...,
         page->{...}
-	}
+	},
+      section2FeatureItem1{
+        ...,
+        page->{...}
+	},
+      section2FeatureItem2{
+        ...,
+        page->{...}
+	},
+      section2FeatureItem3{
+        ...,
+        page->{...}
+	},
+      section2FeatureItem4{
+        ...,
+        page->{...}
+	},
+      section2FeatureItem5{
+        ...,
+        page->{...}
+	},
+      section2FeatureItem6{
+        ...,
+        page->{...}
+	},
     }`
    )
 }

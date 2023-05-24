@@ -22,12 +22,12 @@ const Hero = ({ data }) => {
         </div>
         <div className="hero-actions-buttons flex flex-col  items-center md:items-start md:flex-row font-semibold space-y-10 md:space-y-0 md:space-x-5 mt-10">
           <div className="get-quote">
-            <Link
+            <a
               href={"/contact"}
               className="bg-[#3535de] py-3 px-5 text-white shadow-sm shadow-theme transition-colors duration-500 hover:shadow-black hover:bg-black hover:text-white rounded-md"
             >
               Get a Free Quote
-            </Link>
+            </a>
           </div>
           <div className="learn-more">
             <a

@@ -173,7 +173,7 @@ export default function (formState){
                                                                 <tr>
                                                                     <td class="pad">
                                                                         <div style="color:#000000;direction:ltr;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:14px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:16.8px;">
-                                                                            <p style="margin: 0;">Thank you htmlFor reaching out to us. We truly appreciate you taking the time to contact us and express your interest. Your message has been successfully received and is now in the hands of our dedicated team.</p>
+                                                                            <p style="margin: 0;">Thank you for reaching out to us. We truly appreciate you taking the time to contact us and express your interest. Your message has been successfully received and is now in the hands of our dedicated team.</p>
                                                                         </div>
                                                                     </td>
                                                                 </tr>

@@ -33,7 +33,7 @@ const ServicesWidget = ({ data }) => {
           </div>
         </div>
         <div className="keyfeatures grid grid-cols-1 md:grid-cols-3 mt-4 md:mt-20 gap-4 md:gap-10">
-          <Link
+          <a
             href={`/feature/${data.section1FeatureItem1?.page?.slug.current}`}
           >
             <div
@@ -56,8 +56,8 @@ const ServicesWidget = ({ data }) => {
                 <p>{data.section1FeatureItem1.paragraph}</p>
               </div>
             </div>
-          </Link>
-          <Link
+          </a>
+          <a
             href={`/feature/${data.section1FeatureItem2?.page?.slug.current}`}
           >
             <div
@@ -80,8 +80,8 @@ const ServicesWidget = ({ data }) => {
                 <p>{data.section1FeatureItem2.paragraph}</p>
               </div>
             </div>
-          </Link>
-          <Link
+          </a>
+          <a
             href={`/feature/${data.section1FeatureItem3?.page?.slug.current}`}
           >
             <div
@@ -104,7 +104,7 @@ const ServicesWidget = ({ data }) => {
                 <p>{data.section1FeatureItem3.paragraph}</p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

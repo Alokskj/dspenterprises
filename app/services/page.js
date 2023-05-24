@@ -6,7 +6,7 @@ export const metadata = {
 }
 const page = async () => {
     const data = await getFeaturePages()
-    console.log(data)
+    
   return (
     <div className="min-h-screen justify-between flex flex-col mb-8 px-4 md:px-30 lg:px-40 xl:px-60 ">
       {data.map((item)=>{

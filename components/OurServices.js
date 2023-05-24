@@ -1,13 +1,21 @@
 import {
   faBullhorn,
   faChartLine,
+  faDisplay,
+  faGift,
   faGlobe,
   faNetworkWired,
+  faPalette,
+  faPrint,
+  faShop,
+  faSignHanging,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 
 const OurServices = ({ data }) => {
+  console.log(data.section2FeatureItem1?.page)
   return (
     <div
       data-aos="fade"
@@ -25,6 +33,9 @@ const OurServices = ({ data }) => {
         </p>
       </div>
       <div className="features grid grid-cols-1 md:grid-cols-2 my-8  gap-4 ">
+      <a
+            href={`/feature/${data.section2FeatureItem1?.page?.slug.current}`}
+          >
         <div
           data-aos="fade-up"
           data-aos-delay="150"
@@ -33,8 +44,8 @@ const OurServices = ({ data }) => {
         >
           <div className="svg">
             <FontAwesomeIcon
-              icon={faNetworkWired}
-              size="2xl"
+              icon={faShop}
+              size="xl"
               color="var(--primary-color)"
             />
           </div>
@@ -45,6 +56,10 @@ const OurServices = ({ data }) => {
             <p>{data.section2FeatureItem1.paragraph}</p>
           </div>
         </div>
+        </a>
+        <a
+            href={`/feature/${data.section2FeatureItem2?.page?.slug.current}`}
+          >
         <div
           data-aos="fade-up"
           data-aos-delay="150"
@@ -53,8 +68,8 @@ const OurServices = ({ data }) => {
         >
           <div className="svg">
             <FontAwesomeIcon
-              icon={faBullhorn}
-              size="2xl"
+              icon={faSignHanging}
+              size="xl"
               color="var(--primary-color)"
             />
           </div>
@@ -65,6 +80,10 @@ const OurServices = ({ data }) => {
             <p>{data.section2FeatureItem2.paragraph}</p>
           </div>
         </div>
+        </a>
+        <a
+            href={`/feature/${data.section2FeatureItem3?.page?.slug.current}`}
+          >
         <div
           data-aos="fade-up"
           data-aos-delay="150"
@@ -73,8 +92,8 @@ const OurServices = ({ data }) => {
         >
           <div className="svg">
             <FontAwesomeIcon
-              icon={faGlobe}
-              size="2xl"
+              icon={faPrint}
+              size="xl"
               color="var(--primary-color)"
             />
           </div>
@@ -85,6 +104,10 @@ const OurServices = ({ data }) => {
             <p>{data.section2FeatureItem3.paragraph}</p>
           </div>
         </div>
+        </a>
+        <a
+            href={`/feature/${data.section2FeatureItem4?.page?.slug.current}`}
+          >
         <div
           data-aos="fade-up"
           data-aos-delay="150"
@@ -93,21 +116,73 @@ const OurServices = ({ data }) => {
         >
           <div className="svg">
             <FontAwesomeIcon
-              icon={faChartLine}
-              size="2xl"
+              icon={faGift}
+              size="xl"
               color="var(--primary-color)"
             />
           </div>
           <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h4>Corporate gifting</h4>
+            <h4>{data.section2FeatureItem4.title}</h4>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>
-              We offer a wide range of premium and customized gift options that
-              leave a lasting impression and strengthen business relationships.
+            {data.section2FeatureItem4.paragraph}
             </p>
           </div>
         </div>
+        </a>
+        <a
+            href={`/feature/${data.section2FeatureItem5?.page?.slug.current}`}
+          >
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="600"
+          className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl"
+        >
+          <div className="svg">
+            <FontAwesomeIcon
+              icon={faDisplay}
+              size="xl"
+              color="var(--primary-color)"
+            />
+          </div>
+          <div className="title text-xl md:text-2xl font-bold capitalize">
+            <h4>{data.section2FeatureItem5.title}</h4>
+          </div>
+          <div className="paragraph text-gray-500 text-sm md:text-lg">
+            <p>
+            {data.section2FeatureItem5.paragraph}
+            </p>
+          </div>
+        </div>
+        </a>
+        <a
+            href={`/feature/${data.section2FeatureItem6?.page?.slug.current}`}
+          >
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          data-aos-duration="600"
+          className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl"
+        >
+          <div className="svg">
+            <FontAwesomeIcon
+              icon={faPalette}
+              size="xl"
+              color="var(--primary-color)"
+            />
+          </div>
+          <div className="title text-xl md:text-2xl font-bold capitalize">
+            <h4>{data.section2FeatureItem6.title}</h4>
+          </div>
+          <div className="paragraph text-gray-500 text-sm md:text-lg">
+            <p>
+            {data.section2FeatureItem6.paragraph}
+            </p>
+          </div>
+        </div>
+        </a>
       </div>
     </div>
   );

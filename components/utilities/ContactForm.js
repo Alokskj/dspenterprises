@@ -128,10 +128,7 @@ const ContactForm = () => {
             {isSubmit ?
                         
                         <button
-                        data-aos="fade-left"
-                        data-aos-delay="100"      
-
-                        type="submit"
+                        
                         disabled
                 className="uppercase text-sm font-bold tracking-wide bg-gray-200 text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"

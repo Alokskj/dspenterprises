@@ -9,7 +9,7 @@ export const metadata = {
 const FeaturePage = async ({ params }) => {
   const { slug } = params;
   const info = await getFeaturePage(slug);
-  console.log(info)
+
   const data = info[0];
 
   return (
