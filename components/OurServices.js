@@ -15,7 +15,7 @@ import Link from "next/link";
 import React from "react";
 
 const OurServices = ({ data }) => {
-  console.log(data.section2FeatureItem1?.page)
+  
   return (
     <div
       data-aos="fade"

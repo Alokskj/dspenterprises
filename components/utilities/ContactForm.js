@@ -22,7 +22,7 @@ const ContactForm = () => {
     }
     const config = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : '6F9EFE6F34FBFDAACEE42853CC7ED1992645',
+        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -33,7 +33,7 @@ const ContactForm = () => {
 
     const config2 = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : '6F9EFE6F34FBFDAACEE42853CC7ED1992645',
+        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -49,7 +49,7 @@ const ContactForm = () => {
         if(window.Email && !isSubmit){
             window.Email.send(config)
             .then(
-                message => {console.log(message); setFormState({
+                message => { setFormState({
                     name : '',
                     email : '',
                     message : ''

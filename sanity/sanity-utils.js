@@ -6,9 +6,10 @@ const client = createClient({
     projectId : 'msuzgn24',
     dataset: 'production',
     apiVersion: '2021-08-31',
-    useCdn: true
+    useCdn: true,
+    token : "sk521UbpZDZWShp3EiWylXkKTd1YcoxjEYdBGbcmXuYAj6ba99T2KUoFMn57pQeEOXc9nMH5lQ6ETuCZBajrOqgwMrXcdY1kq9fFYdvTO4JWidGcz5LCcCOC0PfPYZvX8m3vrFqTFNr35Cd06RMYXpS9kxXzhnyit1FiQHD1DpcVjO5qEYni",
 })
-
+export default client
 export async function getHomeInfo(){
    return client.fetch(
     `*[_type == 'home']{
@@ -75,6 +76,23 @@ export async function getFeaturePages(){
       
     }`
    )
+}
+export async function getReviews(){
+   return client.fetch(
+    `*[_type == 'review' && published == true] | order(_createdAt desc){
+      ...
+      
+    }`
+   )
+}
+export async function createReview(data){
+   return client.create(
+    data
+   )
+   .then(data => {
+    
+   })
+   .catch(err => console.log(err))
 }
 
 const builder = imageUrlBuilder(client)

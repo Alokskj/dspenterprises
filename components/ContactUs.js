@@ -1,6 +1,5 @@
 'use client'
-import { EmailJSResponseStatus } from '@emailjs/browser';
-import { config } from '@fortawesome/fontawesome-svg-core';
+
 import React, { useRef, useState } from 'react';
 import EmailTemplateUser from './utilities/EmailTemplateUser';
 import EmailTemplateTeam from './utilities/EmailTemplateTeam';
@@ -23,7 +22,7 @@ const ContactUs = () => {
     }
     const config = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : '6F9EFE6F34FBFDAACEE42853CC7ED1992645',
+        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -34,7 +33,7 @@ const ContactUs = () => {
 
     const config2 = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : '6F9EFE6F34FBFDAACEE42853CC7ED1992645',
+        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -50,7 +49,7 @@ const ContactUs = () => {
         if(window.Email && !isSubmit){
             window.Email.send(config)
             .then(
-                message => {console.log(message); setFormState({
+                message => { setFormState({
                     name : '',
                     email : '',
                     message : ''
