@@ -17,7 +17,6 @@ import React from "react";
 const OurServices = ({ data }) => {
   
   return (
-    <>
     <div
       data-aos="fade"
       className="services service relative min-h-screen  pt-8 flex flex-col items-center  px-4 md:px-30 lg:px-40 xl:px-60"
@@ -186,7 +185,6 @@ const OurServices = ({ data }) => {
         </a>
       </div>
     </div>
-    </>
   );
 };
 

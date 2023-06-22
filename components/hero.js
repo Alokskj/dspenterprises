@@ -6,7 +6,6 @@ import React from "react";
 
 const Hero = ({ data }) => {
   return (
-    <>
     <main
       data-aos="fade"
       className=" hero flex min-w-screen font-poppin min-h-screen"
@@ -48,7 +47,6 @@ const Hero = ({ data }) => {
         />
       </div>
     </main>
-    </>
   );
 };
 

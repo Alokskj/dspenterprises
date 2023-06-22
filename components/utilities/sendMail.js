@@ -32,3 +32,22 @@ export default function sendMail(formState, setFormState){
     }  
     submitHander()
 }
+    const submitHander = () =>{
+        if(window.Email){
+            window.Email.send(config)
+            .then(
+                message => { setFormState({
+                    userName : '',
+                    email : '',
+                    message : '',
+                    rating : 1
+                })}
+              )
+            .catch(error => console.log(error));
+        }
+        else{
+            console.log('email client is not avaibale')
+        }
+    }  
+    submitHander()
+}

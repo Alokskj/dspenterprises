@@ -9,7 +9,6 @@ const InfoTop = async () => {
   const data = info[0]
   
   return (
-    <>
     <div className='bg-theme  top-10 w-full text-white font-semibold   justify-center items-center flex-col md:flex-row md:justify-end md:gap-10  py-2 text-sm  md:px-30 lg:px-40 xl:px-60'>
         <a href={`tel:${data.contactNumber}`} className='flex gap-2 items-center'>
         <FontAwesomeIcon icon={faPhone} />
@@ -21,7 +20,6 @@ const InfoTop = async () => {
             <p>{data.contactEmail}</p>
         </a>
     </div>
-    </>
   )
 }
 
