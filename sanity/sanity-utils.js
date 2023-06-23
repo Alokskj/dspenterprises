@@ -3,11 +3,11 @@
 import { createClient } from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 const client = createClient({
-    projectId : `${process.env.SANITY_PROJECT_ID}`,
+    projectId : 'msuzgn24',
     dataset: 'production',
     apiVersion: '2021-08-31',
     useCdn: true,
-    token : `${process.env.SANITY_PROJECT_TOKEN}`,
+    token : 'sk521UbpZDZWShp3EiWylXkKTd1YcoxjEYdBGbcmXuYAj6ba99T2KUoFMn57pQeEOXc9nMH5lQ6ETuCZBajrOqgwMrXcdY1kq9fFYdvTO4JWidGcz5LCcCOC0PfPYZvX8m3vrFqTFNr35Cd06RMYXpS9kxXzhnyit1FiQHD1DpcVjO5qEYni',
 })
 export default client
 export async function getHomeInfo(){

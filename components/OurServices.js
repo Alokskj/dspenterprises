@@ -22,18 +22,18 @@ const OurServices = ({ data }) => {
       className="services service relative min-h-screen  pt-8 flex flex-col items-center  px-4 md:px-30 lg:px-40 xl:px-60"
     >
       <div className="section-title  text-center text-lg poppins font-semibold text-theme uppercase mb-5">
-        <h3>{data.section2StartTitle}</h3>
+        <h3 className="text-gradient">{data.section2StartTitle}</h3>
       </div>
       <div className="section-title-paragraph text-center items-center space-y-3">
-        <h1 className="text-3xl md:text-5xl  font-bold ">
+        <h2 className="text-3xl md:text-5xl  font-bold ">
           {data.section2MainTitle}
-        </h1>
+        </h2>
         <p className="text-gray-500 text-xs md:test-sm md:w-2/3 m-auto">
           {data.section2Paragraph}
         </p>
       </div>
       <div className="features grid grid-cols-1 md:grid-cols-2 my-8  gap-4 ">
-      <a
+      <Link
             href={`/feature/${data.section2FeatureItem1?.page?.slug.current}`}
           >
         <div
@@ -56,8 +56,8 @@ const OurServices = ({ data }) => {
             <p>{data.section2FeatureItem1.paragraph}</p>
           </div>
         </div>
-        </a>
-        <a
+        </Link>
+        <Link
             href={`/feature/${data.section2FeatureItem2?.page?.slug.current}`}
           >
         <div
@@ -80,8 +80,8 @@ const OurServices = ({ data }) => {
             <p>{data.section2FeatureItem2.paragraph}</p>
           </div>
         </div>
-        </a>
-        <a
+        </Link>
+        <Link
             href={`/feature/${data.section2FeatureItem3?.page?.slug.current}`}
           >
         <div
@@ -104,8 +104,8 @@ const OurServices = ({ data }) => {
             <p>{data.section2FeatureItem3.paragraph}</p>
           </div>
         </div>
-        </a>
-        <a
+        </Link>
+        <Link
             href={`/feature/${data.section2FeatureItem4?.page?.slug.current}`}
           >
         <div
@@ -130,8 +130,8 @@ const OurServices = ({ data }) => {
             </p>
           </div>
         </div>
-        </a>
-        <a
+        </Link>
+        <Link
             href={`/feature/${data.section2FeatureItem5?.page?.slug.current}`}
           >
         <div
@@ -156,8 +156,8 @@ const OurServices = ({ data }) => {
             </p>
           </div>
         </div>
-        </a>
-        <a
+        </Link>
+        <Link
             href={`/feature/${data.section2FeatureItem6?.page?.slug.current}`}
           >
         <div
@@ -182,7 +182,7 @@ const OurServices = ({ data }) => {
             </p>
           </div>
         </div>
-        </a>
+        </Link>
       </div>
     </div>
   );

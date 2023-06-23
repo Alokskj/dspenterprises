@@ -14,7 +14,7 @@ const Testimonial = ({data}) => {
   data-aos='fade'
   className="container px-5 pb-12 pt-4  mx-auto">
   <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
-        <h3>Testimonial</h3>
+        <h3 className="text-gradient">Testimonial</h3>
       </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4  w-full ">
       {data.testimonial.map((item) => {
@@ -27,7 +27,7 @@ const Testimonial = ({data}) => {
       
     </div>
     <div className="view-more flex justify-center items-center mt-8 text-theme capitalize font-semibold transition-all outline-none duration-300  focus:text-gray-400 hover:text-gray-400">
-      <a href='/reviews'><p>view more</p></a>
+      <Link href='/reviews'><p>view more</p></Link>
     </div>
   </div>
 </section>

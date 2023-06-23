@@ -2,8 +2,9 @@ import ImageSlider from "@/components/utilities/ImageSlider";
 import { getFeaturePage, urlFor } from "@/sanity/sanity-utils";
 import React from "react";
 
-export const metadata = {
-    title: 'Feature',
+export async function generateMetadata({ params, searchParams }) {
+  const product = await getFeaturePage(params.slug);
+  return { title: product[0].title };
 }
 
 const FeaturePage = async ({ params }) => {

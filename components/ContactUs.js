@@ -6,6 +6,7 @@ import EmailTemplateTeam from './utilities/EmailTemplateTeam';
 import ContactFormHome from './utilities/ContactFormHome';
 
 const ContactUs = () => {
+    
     const [isSubmit , setIsSubmit] = useState(false)
     const [formState, setFormState] = useState({
         name : '',
@@ -22,7 +23,7 @@ const ContactUs = () => {
     }
     const config = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : `${process.env.NODEMAILER_PASSWORD}`,
+        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -33,7 +34,7 @@ const ContactUs = () => {
 
     const config2 = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : `${process.env.NODEMAILER_PASSWORD}`,
+        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -73,10 +74,10 @@ const ContactUs = () => {
     data-aos='fade'
     className="services py-4 md:hidden bg-gray-100 dark:bg-gray-900  px-4 md:px-30 lg:px-40 xl:px-60">
       <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
-        <h2>Get in touch</h2>
+        <h2 className="text-gradient">Get in touch</h2>
       </div>
       <div className="section-title-paragraph text-center items-center space-y-3">
-        <h3 className="text-2xl md:text-5xl  font-bold ">
+        <h3  className="text-2xl md:text-5xl  font-bold ">
           Fill in the form to start a conversation
         </h3>
       </div>
@@ -114,7 +115,7 @@ const ContactUs = () => {
                         <button
                        
                         type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
-                            Thanks htmlFor contacting us
+                            Thanks For contacting us
                         </button>
                         :
                         
@@ -133,7 +134,7 @@ const ContactUs = () => {
 
 
     {/* ///// */}
-    <div className="relative hidden md:flex items-top justify-center bg-gray-200 py-20  dark:bg-gray-900 sm:items-center sm:pt-0">
+    <div className=" hidden md:flex  items-top justify-center bg-gray-200 py-20  dark:bg-gray-900 sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div className="mt-8 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">
@@ -159,7 +160,7 @@ const ContactUs = () => {
                         {isSubmit ?
                         
                         <button  type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
-                            Thanks htmlFor contacting us
+                            Thanks For contacting us
                         </button>
                         :
                         

@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           name="description"
-          content="DSP Enterprises is a trusted marketing and advertising agency based in Ghaziabad, Uttar Pradesh. Serving clients in Delhi, Mumbai, Bengaluru, Lucknow, and surrounding areas. We specialize in banner creations, brand management, broadcast management, in-shop branding, LED signboard manufacturing, vinyl printing, one-way printing, and corporate gifting. Partner with us for exceptional results."
+          content="DSP Enterprises is a trusted marketing and advertising agency based in Ghaziabad.Serving clients in Delhi, Mumbai, Bengaluru, Lucknow. We specialize in banner creations, brand management, broadcast management, in-shop branding, LED signboard manufacturing, vinyl printing, one-way printing, and corporate gifting."
         />
         <meta
           name="keywords"

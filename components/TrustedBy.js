@@ -7,7 +7,7 @@ const TrustedBy = () => {
     data-aos='fade'
     className='pb-10 px-4 md:px-30 lg:px-40 xl:px-60'>
         <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
-            <h3>trusted by</h3>
+            <h3 className="text-gradient">trusted by</h3>
         </div>
         <div className="clients-logo-grid md:w-5/6 m-auto my-8 grid grid-cols-2  grid-rows-3  md:grid-cols-3 lg:grid-cols-3 items-center justify-items-center gap-x-10 md:gap-x-20 gap-y-20 md:gap-y-10">
             <div

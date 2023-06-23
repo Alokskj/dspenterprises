@@ -4,7 +4,7 @@ import EmailTemplateReview from "./EmailTemplateReview";
 export default function sendMail(formState, setFormState){
     const config = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : `${process.env.NODEMAILER_PASSWORD}`,
+        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',

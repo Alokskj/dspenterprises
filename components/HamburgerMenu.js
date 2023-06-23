@@ -32,28 +32,28 @@ const HamburgerMenu = () => {
       >
         <FontAwesomeIcon icon={menu ? faClose : faBars} size="2xl" />
       </div>
-
+     
       <div
        
-        className={`absolute md:hidden top-16 w-full  px-4 flex flex-col pt-2 pb-4 transition-all duration-200 ${!menu ?  'left-[-400px]' : 'left-0'} ease-in bg-white`}
+        className={`absolute md:hidden top-16 w-full  px-4 flex flex-col pt-2 pb-4 transition-all duration-200 ${!menu ?  'left-[-100vw]' : 'left-0'} ease-in bg-white`}
       >
         <nav>
           <ul
            className="flex flex-col mb-2 text-xl  space-y-3 font-semibold ">
-            <li>
-              <a href={"/"}>Home</a>
+            <li >
+              <Link  href={"/"}><p className="transition-transform hover:scale-110 hover:translate-x-10  duration-300 ">Home</p></Link>
             </li>
             <li>
-              <a href={"/services"}>Services</a>
+              <Link href={"/services"}><p className="transition-transform hover:scale-110 hover:translate-x-10  duration-300 ">Services</p></Link>
             </li>
             <li>
-              <a href={"/aboutus"}>About</a>
+              <Link href={"/aboutus"}><p className="transition-transform hover:scale-110 hover:translate-x-10  duration-300 ">About</p></Link>
             </li>
             <li>
-              <a href={"/gallery"}>Gallery</a>
+              <Link href={"/gallery"}><p className="transition-transform hover:scale-110 hover:translate-x-10  duration-300 ">Gallery</p></Link>
             </li>
             <li>
-              <a href={"/contact"}>Contact</a>
+              <Link href={"/contact"}><p className="transition-transform hover:scale-110 hover:translate-x-10  duration-300 ">Contact</p></Link>
             </li>
           </ul>
         </nav>
