@@ -21,12 +21,12 @@ const ServicesWidget = ({ data }) => {
         data-aos-delay="150"
         className="section-title flex md:justify-center text-[#3535de] md:w-2/3 poppins uppercase font-semibold "
       >
-        <p>{data?.section1StartTitle}</p>
+        <h3>{data?.section1StartTitle}</h3>
       </div>
       <div data-aos="fade" data-aos-delay="150" className="section-content">
         <div className="services-title-paragraph">
           <div className="services-main-title font-bold text-3xl md:text-6xl md:w-3/5 mt-4 mb-4 md:mt-0 capitalize">
-            <p>{data.section1MainTitle}</p>
+            <h1>{data.section1MainTitle}</h1>
           </div>
           <div className="services-paragraph text-gray-500 md:my-8 md:w-4/5">
             <p>{data.section1Paragraph}</p>
@@ -50,7 +50,7 @@ const ServicesWidget = ({ data }) => {
                 />
               </div>
               <div className="title text-2xl font-bold my-2">
-                <p>{data.section1FeatureItem1.title}</p>
+                <h2>{data.section1FeatureItem1.title}</h2>
               </div>
               <div className="paragraph text-gray-500">
                 <p>{data.section1FeatureItem1.paragraph}</p>
@@ -74,7 +74,7 @@ const ServicesWidget = ({ data }) => {
                 />
               </div>
               <div className="title text-2xl font-bold my-2">
-                <p>{data.section1FeatureItem2.title}</p>
+                <h2>{data.section1FeatureItem2.title}</h2>
               </div>
               <div className="paragraph text-gray-500">
                 <p>{data.section1FeatureItem2.paragraph}</p>
@@ -98,7 +98,7 @@ const ServicesWidget = ({ data }) => {
                 />
               </div>
               <div className="title text-2xl font-bold my-2">
-                <p>{data.section1FeatureItem3.title}</p>
+                <h2>{data.section1FeatureItem3.title}</h2>
               </div>
               <div className="paragraph text-gray-500">
                 <p>{data.section1FeatureItem3.paragraph}</p>

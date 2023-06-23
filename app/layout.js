@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
 import InfoTop from "@/components/InfoTop";
-import Header from "@/components/Header";
+import Header from "@/components/header";
 import Footer from "@/components/Footer";
 import "aos/dist/aos.css";
 config.autoAddCss = false;
@@ -17,10 +17,9 @@ const monserrat = Montserrat({
 });
 export const metadata = {
   title: {
-    default: "Dsp Enterprises",
-    template: "%s | Dsp Enterprises",
+    default: "Dsp Enterprises - Your Marketing & Advertising Partner",
+    template: "%s | Dsp Enterprises - Your Marketing & Advertising Partner",
   },
-  description: "Dsp Enterprises - We Make Big Ideas Happen",
 };
 
 export default function RootLayout({ children }) {
@@ -29,7 +28,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           name="description"
-          content="DSP Enterprises is a leading offline marketing and advertising company in Delhi. We specialize in banner creations, brand management, broadcast management, in-shop branding, LED signboard manufacturing, vinyl/one-way printing, and corporate gifting. Partner with us to elevate your brand's visibility and drive growth."
+          content="DSP Enterprises is a trusted marketing and advertising agency based in Ghaziabad, Uttar Pradesh. Serving clients in Delhi, Mumbai, Bengaluru, Lucknow, and surrounding areas. We specialize in banner creations, brand management, broadcast management, in-shop branding, LED signboard manufacturing, vinyl printing, one-way printing, and corporate gifting. Partner with us for exceptional results."
         />
         <meta
           name="keywords"
@@ -92,7 +91,16 @@ export default function RootLayout({ children }) {
 
         <link rel="canonical" href="https://www.dspenterprises.net" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       
+        {/* google analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RC9C709HZL"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-RC9C709HZL');
+        </script>
       </head>
       <body>
         {<Header />}

@@ -11,7 +11,7 @@ const Footer = async () => {
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a href="#"  className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         
-        <span className=" text-3xl poppins font-bold">DSP Enterprises</span>
+        <h3 className=" text-3xl poppins font-bold">DSP Enterprises</h3>
       </a>
       <p className="mt-2 text-sm text-gray-500 capitalize">we make big ideas happen</p>
     </div>

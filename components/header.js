@@ -14,7 +14,7 @@ const Header = () => {
        <div className="logo-nav flex pl-4 md:pl-0 space-x-10 items-center">
         <a href={"/"}>
         <div className="logo bg-white text-4xl font-extrabold cursor-pointer ">
-            <p>DSP</p>
+            <h2>DSP</h2>
         </div>
         </a>
         <nav className='hidden md:flex'>

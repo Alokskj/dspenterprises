@@ -14,7 +14,7 @@ const Testimonial = ({data}) => {
   data-aos='fade'
   className="container px-5 pb-12 pt-4  mx-auto">
   <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
-        <h4>Testimonial</h4>
+        <h3>Testimonial</h3>
       </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4  w-full ">
       {data.testimonial.map((item) => {

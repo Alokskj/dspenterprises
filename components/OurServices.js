@@ -50,7 +50,7 @@ const OurServices = ({ data }) => {
             />
           </div>
           <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h4>{data.section2FeatureItem1.title}</h4>
+            <h2>{data.section2FeatureItem1.title}</h2>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg ">
             <p>{data.section2FeatureItem1.paragraph}</p>
@@ -74,7 +74,7 @@ const OurServices = ({ data }) => {
             />
           </div>
           <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h4>{data.section2FeatureItem2.title}</h4>
+            <h2>{data.section2FeatureItem2.title}</h2>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>{data.section2FeatureItem2.paragraph}</p>
@@ -98,7 +98,7 @@ const OurServices = ({ data }) => {
             />
           </div>
           <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h4>{data.section2FeatureItem3.title}</h4>
+            <h2>{data.section2FeatureItem3.title}</h2>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>{data.section2FeatureItem3.paragraph}</p>
@@ -122,7 +122,7 @@ const OurServices = ({ data }) => {
             />
           </div>
           <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h4>{data.section2FeatureItem4.title}</h4>
+            <h2>{data.section2FeatureItem4.title}</h2>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>
@@ -148,7 +148,7 @@ const OurServices = ({ data }) => {
             />
           </div>
           <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h4>{data.section2FeatureItem5.title}</h4>
+            <h2>{data.section2FeatureItem5.title}</h2>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>
@@ -174,7 +174,7 @@ const OurServices = ({ data }) => {
             />
           </div>
           <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h4>{data.section2FeatureItem6.title}</h4>
+            <h2>{data.section2FeatureItem6.title}</h2>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>

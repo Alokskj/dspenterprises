@@ -73,12 +73,12 @@ const ContactUs = () => {
     data-aos='fade'
     className="services py-4 md:hidden bg-gray-100 dark:bg-gray-900  px-4 md:px-30 lg:px-40 xl:px-60">
       <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
-        <h4>Get in touch</h4>
+        <h2>Get in touch</h2>
       </div>
       <div className="section-title-paragraph text-center items-center space-y-3">
-        <h1 className="text-2xl md:text-5xl  font-bold ">
+        <h3 className="text-2xl md:text-5xl  font-bold ">
           Fill in the form to start a conversation
-        </h1>
+        </h3>
       </div>
       <div className="form">
       <form  onSubmit={submitHander} className="p-6 flex flex-col justify-center">
