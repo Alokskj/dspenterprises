@@ -91,16 +91,7 @@ export default function RootLayout({ children }) {
 
         <link rel="canonical" href="https://www.dspenterprises.net" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* google analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-RC9C709HZL"
-        ></script>
-        <script>
-          {window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments);}
-          gtag('js', new Date()); gtag('config', 'G-RC9C709HZL');}
-        </script>
+        
       </head>
       <body>
         {<Header />}
