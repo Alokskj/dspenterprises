@@ -97,9 +97,9 @@ export default function RootLayout({ children }) {
           src="https://www.googletagmanager.com/gtag/js?id=G-RC9C709HZL"
         ></script>
         <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-RC9C709HZL');
+          {window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments);}
+          gtag('js', new Date()); gtag('config', 'G-RC9C709HZL');}
         </script>
       </head>
       <body>
