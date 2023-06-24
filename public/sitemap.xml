@@ -9,23 +9,83 @@
 
 <url>
   <loc>https://dspenterprises.net/</loc>
-  <lastmod>2023-05-20T04:02:26+00:00</lastmod>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://dspenterprises.net/services</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://dspenterprises.net/gallery</loc>
-  <lastmod>2023-05-20T04:02:26+00:00</lastmod>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dspenterprises.net/aboutus</loc>
-  <lastmod>2023-05-20T04:02:26+00:00</lastmod>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://dspenterprises.net/contact</loc>
-  <lastmod>2023-05-20T04:02:26+00:00</lastmod>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/brand-managment</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/broadcast-managment</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/marketing</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/in-shop-branding</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/led-signboard-manufacturers</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/printing-service</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/corporate-gifting</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/standee-display</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/feature/offset-printing</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/reviews</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dspenterprises.net/reviews/add-review</loc>
+  <lastmod>2023-06-23T18:55:44+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

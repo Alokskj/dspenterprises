@@ -19,7 +19,7 @@ const page = async () => {
       <div
       data-aos='fade'
       className="flex justify-center items-center min-w-screen min-h-screen bg-white  ">
-        <div className="container mx-auto my-12 px-4 md:px-30 lg:px-40 xl:px-60">
+        <div className="container mx-auto md:py-12 px-4 md:px-30 lg:px-40 xl:px-60">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
             <div className="flex theme-line flex-col gap-2">
               <h1 className="font-bold   uppercase text-2xl lg:text-3xl">
