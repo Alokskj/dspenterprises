@@ -152,25 +152,30 @@ const ContactUs = () => {
                     <ContactFormHome />
 
                     <form onSubmit={submitHander} className="p-6 flex flex-col justify-center">
+                        <div className="grid grid-cols-1 gap-2">
                         <div className="flex flex-col">
                             <label htmlFor="name" className="hidden">Full Name</label>
                             <input type="name" required value={formState.name} onChange={changeHalder} name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
-
-                        <div className="flex flex-col mt-2">
-                            <label htmlFor="email" className="hidden">Email</label>
-                            <input type="email" required value={formState.email} onChange={changeHalder} name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
+                        <div className="flex flex-col ">
+                            <label htmlFor="mobileNumber" className="hidden">Mobile Number</label>
+                            <input type="number" required value={formState.mobileNumber} onChange={changeHalder} name="mobileNumber" id="mobileNumber" placeholder="Mobile Number" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
-                        <div className="flex flex-col mt-2">
+                        <div className="flex md:col-span-2 flex-col ">
+                            <label htmlFor="email" className="hidden">Email</label>
+                            <input type="email" required value={formState.email} onChange={changeHalder} name="email" id="email" placeholder="Email" className="w-100  py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
+                        </div>
+
+                        <div className="flex md:col-span-2 flex-col ">
                             
                             <label htmlFor="message" className="hidden">Message</label>
-                            <textarea  type="text" required value={formState.message} onChange={changeHalder} name="message" id="message" placeholder="Enter your Message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
+                            <textarea rows={4} type="text" required value={formState.message} onChange={changeHalder} name="message" id="message" placeholder="Enter your Message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
                         </div>
-
+                        </div>
                         {isSubmit ?
                         
-                        <button  type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
+                        <button  type="button" disabled  className="md:w-1/2  bg-gray-700  text-white font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
                             Thanks For contacting us
                         </button>
                         :

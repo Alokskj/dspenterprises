@@ -69,7 +69,7 @@ const ContactForm = () => {
         <input
           data-aos="fade"
           data-aos-delay="100"
-          className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          className="w-full  bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
           type="text"
           name="name"
           onChange={changeHalder}
@@ -81,7 +81,7 @@ const ContactForm = () => {
         <input
           data-aos="fade"
           data-aos-delay="200"
-          className="w-full md:col-span-2 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          className="w-full  bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
           type="number"
           name="mobileNumber"
           onChange={changeHalder}
