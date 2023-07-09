@@ -11,7 +11,8 @@ const ContactUs = () => {
     const [formState, setFormState] = useState({
         name : '',
         email : '',
-        message : ''
+        message : '',
+        mobileNumber: ''
     })
     const changeHalder = (event) =>{
         setFormState((prevValue)=>{
@@ -23,7 +24,7 @@ const ContactUs = () => {
     }
     const config = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
+        Password : 'F0F1ED2675D246DD4BCC56B25BD87D94802D',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -34,7 +35,7 @@ const ContactUs = () => {
 
     const config2 = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
+        Password : 'F0F1ED2675D246DD4BCC56B25BD87D94802D',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',
@@ -53,7 +54,8 @@ const ContactUs = () => {
                 message => { setFormState({
                     name : '',
                     email : '',
-                    message : ''
+                    message : '',
+                    mobileNumber: ""
                 })}
               )
             .catch(error => console.log(error));  
@@ -72,7 +74,7 @@ const ContactUs = () => {
     <>
     <div
     data-aos='fade'
-    className="services py-4 md:hidden bg-gray-100 dark:bg-gray-900  px-4 md:px-30 lg:px-40 xl:px-60">
+    className="contact-home py-4 md:hidden bg-gray-100   px-4 md:px-30 lg:px-40 xl:px-60">
       <div className="section-title flex my-8 poppins font-semibold justify-center items-center text-theme uppercase">
         <h2 className="text-gradient">Get in touch</h2>
       </div>
@@ -89,7 +91,15 @@ const ContactUs = () => {
                         data-aos-duration="600"
                         className="flex flex-col">
                             <label htmlFor="name" className="hidden">Full Name</label>
-                            <input required value={formState.name} onChange={changeHalder} type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
+                            <input required value={formState.name} onChange={changeHalder} type="name" name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
+                        </div>
+                        <div
+                        data-aos="fade"
+                        data-aos-delay="100"
+                        data-aos-duration="600"
+                        className="flex flex-col mt-2">
+                            <label htmlFor="mobileNumber" className="hidden">Mobile Number</label>
+                            <input required value={formState.mobileNumber} onChange={changeHalder} type="number" name="mobileNumber" id="mobileNumber" placeholder="Mobile Number" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <div
@@ -98,22 +108,22 @@ const ContactUs = () => {
                         data-aos-duration="600"
                         className="flex flex-col mt-2">
                             <label htmlFor="email" className="hidden">Email</label>
-                            <input required value={formState.email} onChange={changeHalder} type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
+                            <input required value={formState.email} onChange={changeHalder} type="email" name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
-
                         <div
+                        
                         data-aos="fade"
                         data-aos-delay="150"
                         data-aos-duration="600"
                         className="flex flex-col mt-2">
                             <label htmlFor="message" className="hidden">Message</label>
-                            <textarea required value={formState.message} onChange={changeHalder}  rows={3} name="message" id="message" placeholder="Enter your message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
+                            <textarea required value={formState.message} onChange={changeHalder}  rows={3} name="message" id="message" placeholder="Enter your message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
                         </div>
                         
                         {isSubmit ?
                         
                         <button
-                       
+                        data-aos-anchor-placement="top"
                         type="button" disabled  className="md:w-32 bg-gray-200  text-black font-bold py-3 px-6 rounded-lg mt-3  transition ease-in-out duration-300">
                             Thanks For contacting us
                         </button>
@@ -123,6 +133,7 @@ const ContactUs = () => {
                         data-aos="fade-up"
                         data-aos-delay="175"
                         data-aos-duration="600"
+                        data-aos-anchor-placement="top"
                         type="submit" className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
                            Submit
                         </button>
@@ -134,7 +145,7 @@ const ContactUs = () => {
 
 
     {/* ///// */}
-    <div className=" hidden md:flex  items-top justify-center bg-gray-200 py-20  dark:bg-gray-900 sm:items-center sm:pt-0">
+    <div className=" hidden md:flex  items-top justify-center bg-gray-200 py-20   sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div className="mt-8 overflow-hidden">
                 <div className="grid grid-cols-1 md:grid-cols-2">
@@ -143,18 +154,18 @@ const ContactUs = () => {
                     <form onSubmit={submitHander} className="p-6 flex flex-col justify-center">
                         <div className="flex flex-col">
                             <label htmlFor="name" className="hidden">Full Name</label>
-                            <input type="name" required value={formState.name} onChange={changeHalder} name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
+                            <input type="name" required value={formState.name} onChange={changeHalder} name="name" id="name" placeholder="Full Name" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <div className="flex flex-col mt-2">
                             <label htmlFor="email" className="hidden">Email</label>
-                            <input type="email" required value={formState.email} onChange={changeHalder} name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
+                            <input type="email" required value={formState.email} onChange={changeHalder} name="email" id="email" placeholder="Email" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"/>
                         </div>
 
                         <div className="flex flex-col mt-2">
                             
                             <label htmlFor="message" className="hidden">Message</label>
-                            <textarea  type="text" required value={formState.message} onChange={changeHalder} name="message" id="message" placeholder="Enter your Message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
+                            <textarea  type="text" required value={formState.message} onChange={changeHalder} name="message" id="message" placeholder="Enter your Message" className="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"></textarea>
                         </div>
 
                         {isSubmit ?

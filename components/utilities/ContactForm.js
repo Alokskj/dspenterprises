@@ -7,7 +7,7 @@ const ContactForm = () => {
   const [isSubmit, setIsSubmit] = useState(false);
   const [formState, setFormState] = useState({
     name: "",
-    lastName: "",
+    mobileNumber: "",
     email: "",
     message: "",
   });
@@ -21,7 +21,7 @@ const ContactForm = () => {
   };
   const config = {
     Username: "Ravi.chaudhary@dspenterprises.net",
-    Password: "02D6FACD620A5BD46018BE266A4DEEB228AE",
+    Password: "F0F1ED2675D246DD4BCC56B25BD87D94802D",
     Host: "smtp.elasticemail.com",
     Port: "2525",
     From: "Ravi.chaudhary@dspenterprises.net",
@@ -32,7 +32,7 @@ const ContactForm = () => {
 
   const config2 = {
     Username: "Ravi.chaudhary@dspenterprises.net",
-    Password: "02D6FACD620A5BD46018BE266A4DEEB228AE",
+    Password: "F0F1ED2675D246DD4BCC56B25BD87D94802D",
     Host: "smtp.elasticemail.com",
     Port: "2525",
     From: "Ravi.chaudhary@dspenterprises.net",
@@ -52,6 +52,7 @@ const ContactForm = () => {
             name: "",
             email: "",
             message: "",
+            mobileNumber: ""
           });
         })
         .catch((error) => console.log(error));
@@ -74,17 +75,18 @@ const ContactForm = () => {
           onChange={changeHalder}
           value={formState.name}
           required
-          placeholder="First Name*"
+          placeholder="Full Name*"
         />
+        
         <input
           data-aos="fade"
           data-aos-delay="200"
-          className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-          type="text"
-          name="lastName"
+          className="w-full md:col-span-2 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          type="number"
+          name="mobileNumber"
           onChange={changeHalder}
-          value={formState.lastName}
-          placeholder="Last Name"
+          value={formState.mobileNumber}
+          placeholder="Mobile Number"
         />
         <input
           data-aos="fade"
@@ -114,11 +116,10 @@ const ContactForm = () => {
       <div className="my-2 w-1/2 lg:w-1/4">
         {isSubmit ? (
           <button
-            data-aos="fade"
-            data-aos-anchor-placement="top"
+            
             
             disabled
-            className="uppercase text-sm font-bold tracking-wide bg-gray-200 text-gray-100 p-3 rounded-lg w-full 
+            className="uppercase text-sm font-bold tracking-wide bg-gray-700 text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"
           >
             Thanks For Contacting

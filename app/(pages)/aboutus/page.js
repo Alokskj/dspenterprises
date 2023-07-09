@@ -19,7 +19,7 @@ const AboutUs = () => {
         <p className="about-us-paragraph">
           Welcome to DSP Enterprises, a leading provider of comprehensive
           marketing solutions. With years of experience and a team of dedicated
-          professionals, we are committed to delivering exceptional results htmlFor
+          professionals, we are committed to delivering exceptional results for
           businesses across various industries. Our mission is to ignite brand
           success by providing strategic and innovative marketing services. 
         </p>

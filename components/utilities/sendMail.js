@@ -4,7 +4,7 @@ import EmailTemplateReview from "./EmailTemplateReview";
 export default function sendMail(formState, setFormState){
     const config = {
         Username : 'Ravi.chaudhary@dspenterprises.net',
-        Password : '02D6FACD620A5BD46018BE266A4DEEB228AE',
+        Password : 'F0F1ED2675D246DD4BCC56B25BD87D94802D',
         Host : 'smtp.elasticemail.com',
         Port : '2525',
         From : 'Ravi.chaudhary@dspenterprises.net',

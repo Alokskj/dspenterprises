@@ -9,10 +9,11 @@ const Footer = async () => {
     <footer className="text-gray-600 body-font bg-gray-50">
   <div className="container px-5 py-10 md:py-28 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <Link href="#"  className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        
+      <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <Link href="#"  >
         <h3 className=" text-3xl poppins font-bold">DSP Enterprises</h3>
       </Link>
+      </div>
       <p className="mt-2 text-sm text-gray-500 capitalize">we make big ideas happen</p>
     </div>
     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">

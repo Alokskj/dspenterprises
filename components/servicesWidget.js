@@ -33,15 +33,15 @@ const ServicesWidget = ({ data }) => {
           </div>
         </div>
         <div className="keyfeatures grid grid-cols-1 md:grid-cols-3 mt-4 md:mt-20 gap-4 md:gap-10">
-          <Link
-            href={`/feature/${data.section1FeatureItem1?.page?.slug.current}`}
-          >
             <div
               data-aos="fade-up"
               data-aos-delay="50"
               data-aos-duration="600"
               className="feature transition-all duration-500  hover:bg-stone-50  hover:shadow-xl p-4 rounded-xl"
             >
+          <Link
+            href={`/feature/${data.section1FeatureItem1?.page?.slug.current}`}
+          >
               <div className="svg">
                 <FontAwesomeIcon
                   icon={faCommentDots}
@@ -55,17 +55,17 @@ const ServicesWidget = ({ data }) => {
               <div className="paragraph text-gray-500">
                 <p>{data.section1FeatureItem1.paragraph}</p>
               </div>
-            </div>
           </Link>
-          <Link
-            href={`/feature/${data.section1FeatureItem2?.page?.slug.current}`}
-          >
+            </div>
             <div
               data-aos="fade-up"
               data-aos-delay="150"
               data-aos-duration="600"
               className="feature transition-all duration-500 hover:bg-stone-50 hover:shadow-xl p-4 rounded-xl"
             >
+          <Link
+            href={`/feature/${data.section1FeatureItem2?.page?.slug.current}`}
+          >
               <div className="svg">
                 <FontAwesomeIcon
                   icon={faPaperPlane}
@@ -79,17 +79,17 @@ const ServicesWidget = ({ data }) => {
               <div className="paragraph text-gray-500">
                 <p>{data.section1FeatureItem2.paragraph}</p>
               </div>
-            </div>
           </Link>
-          <Link
-            href={`/feature/${data.section1FeatureItem3?.page?.slug.current}`}
-          >
+            </div>
             <div
               data-aos="fade-up"
               data-aos-delay="50"
               data-aos-duration="600"
               className="feature transition-all duration-500 hover:bg-stone-50 hover:shadow-xl p-4 rounded-xl"
             >
+          <Link
+            href={`/feature/${data.section1FeatureItem3?.page?.slug.current}`}
+          >
               <div className="svg">
                 <FontAwesomeIcon
                   icon={faObjectUngroup}
@@ -103,8 +103,8 @@ const ServicesWidget = ({ data }) => {
               <div className="paragraph text-gray-500">
                 <p>{data.section1FeatureItem3.paragraph}</p>
               </div>
-            </div>
           </Link>
+            </div>
         </div>
       </div>
     </div>

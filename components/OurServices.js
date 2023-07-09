@@ -33,15 +33,16 @@ const OurServices = ({ data }) => {
         </p>
       </div>
       <div className="features grid grid-cols-1 md:grid-cols-2 my-8  gap-4 ">
-      <Link
-            href={`/feature/${data.section2FeatureItem1?.page?.slug.current}`}
-          >
         <div
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="600"
           className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl"
         >
+      <Link
+         className="flex flex-col gap-4"
+            href={`/feature/${data.section2FeatureItem1?.page?.slug.current}`}
+          >
           <div className="svg">
             <FontAwesomeIcon
               icon={faShop}
@@ -55,17 +56,18 @@ const OurServices = ({ data }) => {
           <div className="paragraph text-gray-500 text-sm md:text-lg ">
             <p>{data.section2FeatureItem1.paragraph}</p>
           </div>
-        </div>
         </Link>
-        <Link
-            href={`/feature/${data.section2FeatureItem2?.page?.slug.current}`}
-          >
+        </div>
         <div
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="600"
           className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-lg rounded-xl cursor-pointer hover:shadow-2xl"
         >
+        <Link
+        className="flex flex-col gap-4"
+            href={`/feature/${data.section2FeatureItem2?.page?.slug.current}`}
+          >
           <div className="svg">
             <FontAwesomeIcon
               icon={faSignHanging}
@@ -79,17 +81,18 @@ const OurServices = ({ data }) => {
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>{data.section2FeatureItem2.paragraph}</p>
           </div>
-        </div>
         </Link>
-        <Link
-            href={`/feature/${data.section2FeatureItem3?.page?.slug.current}`}
-          >
+        </div>
         <div
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="600"
           className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl"
         >
+        <Link
+        className="flex flex-col gap-4 "
+            href={`/feature/${data.section2FeatureItem3?.page?.slug.current}`}
+          >
           <div className="svg">
             <FontAwesomeIcon
               icon={faPrint}
@@ -97,23 +100,24 @@ const OurServices = ({ data }) => {
               color="var(--primary-color)"
             />
           </div>
-          <div className="title text-xl md:text-2xl font-bold capitalize">
-            <h2>{data.section2FeatureItem3.title}</h2>
+          <div className="title text-xl md:text-2xl font-bold capitalize ">
+            <h2 className=" overflow-ellipsis overflow-hidden">{data.section2FeatureItem3.title}</h2>
           </div>
           <div className="paragraph text-gray-500 text-sm md:text-lg">
             <p>{data.section2FeatureItem3.paragraph}</p>
           </div>
-        </div>
         </Link>
-        <Link
-            href={`/feature/${data.section2FeatureItem4?.page?.slug.current}`}
-          >
+        </div>
         <div
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="600"
           className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl"
         >
+        <Link
+        className="flex flex-col gap-4"
+            href={`/feature/${data.section2FeatureItem4?.page?.slug.current}`}
+          >
           <div className="svg">
             <FontAwesomeIcon
               icon={faGift}
@@ -129,17 +133,18 @@ const OurServices = ({ data }) => {
             {data.section2FeatureItem4.paragraph}
             </p>
           </div>
-        </div>
         </Link>
-        <Link
-            href={`/feature/${data.section2FeatureItem5?.page?.slug.current}`}
-          >
+        </div>
         <div
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="600"
           className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl"
         >
+        <Link
+        className="flex flex-col gap-4"
+            href={`/feature/${data.section2FeatureItem5?.page?.slug.current}`}
+          >
           <div className="svg">
             <FontAwesomeIcon
               icon={faDisplay}
@@ -155,17 +160,18 @@ const OurServices = ({ data }) => {
             {data.section2FeatureItem5.paragraph}
             </p>
           </div>
-        </div>
         </Link>
-        <Link
-            href={`/feature/${data.section2FeatureItem6?.page?.slug.current}`}
-          >
+        </div>
         <div
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="600"
           className="feature bg-white flex flex-col gap-4 p-4 md:p-10 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl"
         >
+        <Link
+        className="flex flex-col gap-4"
+            href={`/feature/${data.section2FeatureItem6?.page?.slug.current}`}
+          >
           <div className="svg">
             <FontAwesomeIcon
               icon={faPalette}
@@ -181,8 +187,8 @@ const OurServices = ({ data }) => {
             {data.section2FeatureItem6.paragraph}
             </p>
           </div>
-        </div>
         </Link>
+        </div>
       </div>
     </div>
   );

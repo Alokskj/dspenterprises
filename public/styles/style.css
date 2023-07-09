@@ -36,11 +36,26 @@ html{
   background-position: right center;
 }
 .services{
-  background-color: #f4f4f5;
+  background-color: #f3f4f6;
+  background-image: url('/assets/svgs/digital-marketing-agency-arc-stroke-white-grad-2.svg'), url('/assets/svgs/digital-marketing-agency-arc-stroke-white-grad-1.svg');
+  background-position: bottom left, top right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 40vw auto;
+  text-transform: capitalize;
+  
+}
+.contact-home{
+  
   background-image: url('/assets/svgs/digital-marketing-agency-arc-stroke-white-grad-2.svg'), url('/assets/svgs/digital-marketing-agency-arc-stroke-white-grad-1.svg');
   background-position: bottom left, top right;
   background-repeat: no-repeat, no-repeat;
   background-size: 50vw auto;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  .services{
+    background-size: 80vw, 80vw;
+  }
   
 }
 .theme-line::after{

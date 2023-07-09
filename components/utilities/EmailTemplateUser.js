@@ -157,7 +157,7 @@ export default function (formState){
                                                             <table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                                                 <tr>
                                                                     <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
-                                                                        <div class="alignment" align="center" style="line-height:10px"><img src="https://46d7cd7d6c.imgdist.com/public/users/BeeFree/beefree-mgccj3yybm/20190705191753_CakeBrowser.png" style="display: block; height: auto; border: 0; width: 150px; max-width: 100%;" width="150"></div>
+                                                                        <div class="alignment" align="center" style="line-height:10px"><img src="https://i.ibb.co/nPtMzd7/dsppng.png" style="display: block; height: auto; border: 0; width: 150px; max-width: 100%;" width="150"></div>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -204,6 +204,17 @@ export default function (formState){
                                                                         <div class="levelOne" style="margin-left: 0;">
                                                                             <ul class="leftList" start="1" style="margin-top: 0; margin-bottom: 0; padding: 0; padding-left: 20px; color: #101112; direction: ltr; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left; mso-line-height-alt: 19.2px; list-style-type: disc;">
                                                                                 <li style="margin-bottom: 0; text-align: left;"><strong>Email :</strong> ${formState.email}</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table><!--[if mso]><style>#list-r0c0m8 ul{margin: 0 !important; padding: 0 !important;} #list-r0c0m8 ul li{mso-special-format: bullet;}#list-r0c0m8 .levelOne li {margin-top: 0 !important;} #list-r0c0m8 .levelOne {margin-left: -20px !important;}#list-r0c0m8 .levelTwo li {margin-top: 0 !important;} #list-r0c0m8 .levelTwo {margin-left: 10px !important;}#list-r0c0m8 .levelThree li {margin-top: 0 !important;} #list-r0c0m8 .levelThree {margin-left: 40px !important;}#list-r0c0m8 .levelFour li {margin-top: 0 !important;} #list-r0c0m8 .levelFour {margin-left: 70px !important;}#list-r0c0m8 .levelFive li {margin-top: 0 !important;} #list-r0c0m8 .levelFive {margin-left: 100px !important;}#list-r0c0m8 .levelSix li {margin-top: 0 !important;} #list-r0c0m8 .levelSix {margin-left: 130px !important;}#list-r0c0m8 .levelSeven li {margin-top: 0 !important;} #list-r0c0m8 .levelSeven {margin-left: 160px !important;}#list-r0c0m8 .levelEight li {margin-top: 0 !important;} #list-r0c0m8 .levelEight {margin-left: 190px !important;}</style><![endif]-->
+                                                            <table class="list_block block-9" id="list-r0c0m8" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+                                                                <tr>
+                                                                    <td class="pad">
+                                                                        <div class="levelOne" style="margin-left: 0;">
+                                                                            <ul class="leftList" start="1" style="margin-top: 0; margin-bottom: 0; padding: 0; padding-left: 20px; color: #101112; direction: ltr; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 16px; font-weight: 400; letter-spacing: 0; line-height: 120%; text-align: left; mso-line-height-alt: 19.2px; list-style-type: disc;">
+                                                                                <li style="margin-bottom: 0; text-align: left;"><strong>Mobile Number :</strong> ${formState.mobileNumber}</li>
                                                                             </ul>
                                                                         </div>
                                                                     </td>

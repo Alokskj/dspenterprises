@@ -157,7 +157,7 @@ export default function(formState){
                                                             <table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                                                 <tr>
                                                                     <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
-                                                                        <div class="alignment" align="center" style="line-height:10px"><img src="https://46d7cd7d6c.imgdist.com/public/users/BeeFree/beefree-mgccj3yybm/20190705191753_CakeBrowser.png" style="display: block; height: auto; border: 0; width: 150px; max-width: 100%;" width="150"></div>
+                                                                        <div class="alignment" align="center" style="line-height:10px"><img src="https://ibb.co/Vw5Y2ng" style="display: block; height: auto; border: 0; width: 150px; max-width: 100%;" width="150"></div>
                                                                     </td>
                                                                 </tr>
                                                             </table>
